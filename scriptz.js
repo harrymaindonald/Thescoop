@@ -29,7 +29,6 @@ function checkActives(e){
   
     if(targets.innerHTML == "The <br> What?"){
         thewhat.style.display = 'inline';
-        elseif(targets)
     }
     else {
         thewhat.style.display = 'none';
