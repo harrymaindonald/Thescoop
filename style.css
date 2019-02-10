@@ -51,6 +51,7 @@ body{
     list-style-type: none;
     display:flex;
     justify-content: space-evenly;  
+    -webkit-tap-highlight-color: transparent;
 }
 
 ul li { 
@@ -60,7 +61,7 @@ ul li {
     background: #326A7C;
     border-radius: 2px;
     box-shadow: 0 0 4px #999;
-
+ 
 }
 
 
@@ -72,7 +73,7 @@ ul li a{
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
     text-decoration: none;
-   
+
     padding: 18px 6px;
     
 }
