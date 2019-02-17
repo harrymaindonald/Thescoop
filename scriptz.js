@@ -17,8 +17,10 @@ function getEventTarget(e) {
 function checkActives(e){
     var thewhy = document.querySelector(".thewhy");
     var thewhat = document.querySelector(".thewhat");
-    var thewww = document.querySelector(".thewww");
+    var thewhere = document.querySelector(".thewhere");
     var thehow = document.querySelector(".thehow");
+    var thewhen = document.querySelector(".thewhen");
+    var thewho = document.querySelector(".thewho");
     var targets = getEventTarget(event);
 
     var elems = document.querySelector(".active");
@@ -27,30 +29,44 @@ function checkActives(e){
     }
    e.target.className = "active";
   
-    if(targets.innerHTML == "The <br> What?"){
+    if(targets.innerHTML == "What"){
         thewhat.style.display = 'inline';
     }
     else {
         thewhat.style.display = 'none';
     }
-    if(targets.innerHTML == "The <br> Why?"){
+    if(targets.innerHTML == "Why"){
         thewhy.style.display = 'inline';
     }
     else {
         thewhy.style.display = 'none';
     }
-    if(targets.innerHTML == "The Who, <br> When &amp; Where?"){
-        thewww.style.display = 'inline';
+    if(targets.innerHTML == "Where"){
+        thewhere.style.display = 'inline';
     }
     else {
-        thewww.style.display = 'none';
+        thewhere.style.display = 'none';
     }
-    if(targets.innerHTML == "The <br> How?"){
+    if(targets.innerHTML == "How"){
         thehow.style.display = 'inline';
     }
     else {
         thehow.style.display = 'none';
     }
+    if(targets.innerHTML == "Who"){
+        thewho.style.display = 'inline';
+    }
+    else {
+        thewho.style.display = 'none';
+    }
+    
+    if(targets.innerHTML == "When"){
+        thewhen.style.display = 'inline';
+    }
+    else {
+        thewhen.style.display = 'none';
+    }
+    
     
 }
 

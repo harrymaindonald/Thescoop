@@ -4,7 +4,6 @@ html{
    width: 100%;
 }
 
-
 body{
     background: grey;
     margin: 0px;
@@ -18,9 +17,8 @@ body{
     margin-right:auto;
     background: #fff;
     min-height: -webkit-fill-available;
-    height:100%;
-    width: 80%;
-   
+    height:100vh;
+    width: 80%; 
 }
 
 .content{
@@ -31,16 +29,38 @@ body{
     margin-left:auto;
     margin-right: auto;
     padding-top: 24px;
-  
-    
+}
+
+.content h2{
+    margin-bottom: 40px;
+}
+
+.content h2 span {
+    color: #33687A;
+}
+
+.content h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.content h1 span:nth-child(1), .content h1 span:nth-child(3) {
+    color: #33687A;
+}
+
+.content h1 span:nth-child(2) {
+    color: #87C771;
 }
 
 .question-buttons{
-    width: 100%;
+    width: 30%;
+    height: 350px;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
-.content ul {
-    width: 100%;
+.question-buttons ul {
+    height: 100%;
     color:white;
     padding: 0; 
     margin: 0;
@@ -50,23 +70,20 @@ body{
     text-transform: uppercase;
     list-style-type: none;
     display:flex;
-    justify-content: space-evenly;  
+    flex-direction: column;
+    justify-content: space-between;  
     -webkit-tap-highlight-color: transparent;
 }
 
-ul li { 
+.question-buttons ul li { 
     width: 100%;  
     border:none;
-    margin: 0 6px;
     background: #326A7C;
     border-radius: 2px;
     box-shadow: 0 0 4px #999;
- 
 }
 
-
-
-ul li a{
+.question-buttons ul li a{
     display:block;
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
@@ -78,25 +95,21 @@ ul li a{
     
 }
 
-
-
 .active {
     color:#87c871;
     font-weight:bold;
 }
 
-
-
-.ripple {
+.question-buttons ul .ripple {
     background-position: center;
     transition: background 0.8s;
 }
 
-.ripple:hover {
+.question-buttons ul .ripple:hover {
     background: #3D849B radial-gradient(circle, transparent 1%, #3D849B 1%) center/15000%;
   }
 
-.ripple:active {
+.question-buttons ul .ripple:active {
     background-color: #6FA7B9;
     background-size: 100%;
     transition: background 0s;
@@ -118,40 +131,65 @@ ul li a{
 }
 
 .answers-container{
-    position: relative;
-    margin-top: 60px;
-    
+    position: relative; 
 }
 
 .answer{
     position: absolute;
     margin-left:auto;
     margin-right:auto;
-    left:0;
-    right:0;
-    width:50%;
+    top: -300px;
+    right:50px;
+    width:55%;
     font-weight: 100;
     font-size: 26px;
     line-height: 35px;
-
+    color: #545454;
 }
 
-.thewhat {
+.thewhat, .thewhy, .thewho, .thewhen, .thewhere, .thehow {
     display: none;
 }
 
-.thewhy{
-    display: none;
+.thewho {
+    line-height: normal;
 }
 
-.thewww {
-    display: none;
+.thewho span:nth-child(1){
+    color: #33687A;
+}
+
+.thewho span:nth-child(2) {
+    color: #87C771;
 }
 
 .thehow {
-    display: none;
+    text-align: left;
+    font-size: 21px;
 }
 
+.thehow, .thewho{
+    top: -350px;
+}
+
+.thehow ul {
+    margin: 0;
+}
+
+.tick-line {
+    font-size: 16px;
+    color: #87C771;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+.cross-line {
+    font-size: 16px;
+    color: red;
+    margin-top: 0;
+    margin-left: 20px;
+}
 
 .about-us-image{
     margin-top: 400px;
@@ -166,7 +204,23 @@ ul li a{
 @media screen and (min-width: 769px) and (max-width: 1170px){
     .answer{
         font-size:22px;
+        width: 58%;
+        right: 37px;
     }
+
+    .question-buttons {
+        margin-left: 20px;
+    }
+
+    .thehow {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .tick-line, .cross-line {
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -174,19 +228,33 @@ ul li a{
         width:100%;
     }
 
-   
+   .content h1 {
+        font-size: 1.7em;
+   }
 
-    .answer{
-        font-size: 20px;
-        width: 85%;
+   .question-buttons {
+    margin-left: 20px;
+}
+
+.answer{
+    font-size:18px;
+    
+    right: 37px;
+}
+
+    .thehow {
+        font-size: 16px;
+        line-height: 22px;
     }
 
-    .content ul{
-        flex-wrap:wrap;
+    .tick-line, .cross-line {
+        font-size: 12px;
     }
+
+
 
     ul li{
-        flex-basis: 40%;
+      
         margin-bottom: 12px;
     }
 
