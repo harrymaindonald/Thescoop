@@ -224,9 +224,14 @@ body{
 }
 
 @media screen and (max-width: 768px) {
+body {
+    background:white;
+}
+
     .container{
         width:100%;
     }
+
 
    .content h1 {
         font-size: 1.7em;
@@ -264,24 +269,57 @@ body{
 }
 
 @media screen and (max-width: 500px){
-    li a{
-        font-size:14px;
+    .content{
+        padding-top: 0;
     }
 
-    .answers-container{
+    .content h2 {
+        font-size: 1.3em;
+        margin-bottom: 20px;
+    }
+
+    .content h1 {
+        font-size: 1.5em;
+    }
+
+    .question-buttons {
+        width: 25%;
+        margin-left: 12px;
         margin-top: 20px;
     }
 
-    .answer{
-        font-size: 16px;
+    .question-buttons ul {
+        font-size: 12px;
+    }
+
+    .answer {
+        font-size: 15px;
+        right: 13px;
+        width: 63%;
     }
 
     .about-us-image{
         margin-top: 287px;
     }
+
+    .thehow ul {
+        padding-inline-start: 16px;
+    }
+
+    .tick-line, .cross-line {
+        margin-left:0px;
+    }
+
+    .thewhy {
+        top: -330px;
+    }
 }
 
 @media (orientation: landscape) and (max-width: 900px) {
+    body {
+        background:white;
+    }
+
     .container{
         width:100%;
     }
