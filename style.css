@@ -17,13 +17,13 @@ body{
     margin-right:auto;
     background: #fff;
     min-height: -webkit-fill-available;
-    height:100vh;
+    height:100%;
     width: 80%; 
 }
 
 .content{
     width: 100%;
-   height: 100%;
+   min-height: 100vh;
     max-width: 900px;
     text-align: center;
     margin-left:auto;
@@ -191,6 +191,37 @@ body{
     margin-left: 20px;
 }
 
+.register{
+    margin-top: 300px;
+    margin-bottom: 20px;
+}
+
+.register-now {
+    display: inline-block;
+    
+    padding: 1.2em 5em;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    border: none; 
+    font-size: 15px;
+    text-align: center;
+    background-color: #87C771;
+  color: white;
+}
+
+.register-now:hover {
+    box-shadow: 1px 6px 15px rgba(0,0,0,0.5);
+}
+
 .about-us-image{
     margin-top: 400px;
 }
@@ -312,6 +343,10 @@ body {
 
     .thewhy {
         top: -330px;
+    }
+
+    .register{
+        margin-top: 325px;
     }
 }
 
