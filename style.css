@@ -274,7 +274,7 @@ body {
 
 .answer{
     font-size:18px;
-    
+    font-weight: 600;
     right: 37px;
 }
 
@@ -289,7 +289,7 @@ body {
 
 
 
-    ul li{
+   .question-buttons ul li{
       
         margin-bottom: 12px;
     }
@@ -369,7 +369,7 @@ body {
 }
 
 @media (orientation: landscape) and (max-width: 668px) {
-    li a{
+   .question-buttons li a{
         font-size:14px;
     }
     .answer{
